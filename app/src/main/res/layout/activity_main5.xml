@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5"
+    android:background="#BFDCDB">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolBar"
+      android:layout_width="match_parent"
+      android:layout_height="?actionBarSize"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24" />
+
+
+  </androidx.appcompat.widget.Toolbar>
+
+  <ImageButton
+      android:id="@+id/btnXoa"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:src="@drawable/minixoa"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+      android:id="@+id/edtTenMonHoc"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:hint="Tên môn học"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+  <EditText
+      android:id="@+id/edtTenBaiTap"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:hint="Tên bài tập"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edtTenMonHoc" />
+
+  <EditText
+      android:id="@+id/edtThoiGianHan"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:layout_marginTop="64dp"
+      android:hint="Thời han"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/edtTenBaiTap" />
+
+  <Spinner
+      android:id="@+id/spinner"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:hint="Thời gian"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/edtThoiGianHan" />
+
+  <Button
+      android:id="@+id/btnEditBaiTap"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:text="Edit bài tập"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/spinner" />
+
+
+  <TextView
+      android:id="@+id/txtNopBai"
+      android:textSize="20sp"
+      android:layout_margin="10dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btnEditBaiTap"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Nộp bài" />
+
+  <ImageView
+      android:id="@+id/imgHinh"
+      android:layout_width="150dp"
+      android:layout_height="150dp"
+      android:layout_marginTop="30dp"
+      android:src="@drawable/ic_baseline_camera_alt_24"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/txtNopBai" />
+
+  <Button
+      android:id="@+id/btnActack"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="10dp"
+      android:text="Đính kèm"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/imgHinh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
